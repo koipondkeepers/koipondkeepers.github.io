@@ -1,0 +1,28 @@
+ .board{
+    background-color: red;
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    border: 5px solid #000;
+ }
+
+ .square{
+  background-color: white;
+  height: 190px;
+  width: 190px;
+  border: 5px solid #000;
+  float: left;
+  /*margin: 0 auto;*/
+ }
+
+.imagesize {
+  width: 90px;
+  position: relative;
+  top: 28%;
+  left: 27%;
+
+}
