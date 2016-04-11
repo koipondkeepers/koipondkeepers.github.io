@@ -163,11 +163,13 @@
           $('body').append("<h2>Diagonal X win from Top left!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else if(game[0][2] === 1 && game[1][1] === 1 && game[2][0] === 1){
           //console.log("Diagonal X win from Top R");
           $('body').append("<h2>Diagonal X win from Top Right!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else{
           break;
         }
@@ -180,34 +182,42 @@
             $('body').append("<h2>L Row O Win Vertically!<br></h2>");
             $('.square').unbind();
             win = true;
+            resetButton();
         }else if(game[0][1] === 0 && game[1][1] === 0 && game[2][1] === 0){
           $('body').append("<h2>M Row O Win Vertically!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else if(game[0][2] === 0 && game[1][2] === 0 && game[2][2] === 0){
           $('body').append("<h2>R Row O Win Vertically!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else if(game[0][0] === 0 && game[0][1] === 0 && game[0][2] === 0){
           $('body').append("<h2>Top Row O win Horizontally!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else if(game[1][0] === 0 && game[1][1] === 0 && game[1][2] === 0){
           $('body').append("<h2>Mid Row O win Horizontally!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else if(game[2][0] === 0 && game[2][1] === 0 && game[2][2] === 0){
           $('body').append("<h2>Bot Row O win Horizontally!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else if(game[0][0] === 0 && game[1][1] === 0 && game[2][2] === 0){
           $('body').append("<h2>Diagonal O win from Top Left!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else if(game[0][2] === 0 && game[1][1] === 0 && game[2][0] === 0){
           $('body').append("<h2>Diagonal O win from Top Right!<br></h2>");
           $('.square').unbind();
           win = true;
+          resetButton();
         }else{
           break;
         }
@@ -241,7 +251,7 @@
           //console.log(i);
         }
         if(i === 10 && win === false){
-          $('body').append("<h2>It's a tie!</h2>")
+          $('body').append("<h2>It's a tie!<br></h2>")
           resetButton();
         }
       }
