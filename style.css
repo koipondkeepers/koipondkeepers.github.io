@@ -1,5 +1,5 @@
  .board{
-    background-color: red;
+    background-color: white;
     /* top: 0;
     left: 0;
     right: 0;
@@ -8,6 +8,9 @@
     width: 600px;
     margin: 0 auto;
     border: 5px solid #000;
+    /* background-image:; */
+    background-repeat: no-repeat;
+    background-size: contain;
  }
 
  .square{
@@ -23,6 +26,10 @@
   position: relative;
   top: 28%;
   left: 27%;
+}
+
+.clicked{
+  background-color: transparent !important;
 }
 
 h1{

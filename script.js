@@ -16,6 +16,19 @@
 
   //var turn = 1;
 
+  var images =[
+    "http://www.visualnews.com/wp-content/uploads/2014/09/Rowan-Atkinson-Inserted-into-Famous-Paintings-10.jpg",
+    "http://blogs.wfmt.com/offmic/files/2013/07/guernica_pablo_picasso-600x600.jpg",
+    "http://unitedvirtuoso.com/wp-content/uploads/2013/06/mona_lisa_face_800x800px1-600x600.jpg",
+    "http://static.bootic.com/_pictures/66287/van-gogh-starry-night-painting.jpg",
+    "http://cdn.shopify.com/s/files/1/0351/1933/products/The_Great_Wave_off_Kanagawa_furo100k-2_grande.jpg?v=1393736525",
+    "https://v.cdn.vine.co/v/avatars/3394d6c7-b13e-41f3-be4c-49362c8966c9.jpg?versionId=ncdrsa8DNpVbPac0dMkSDiHzoXW1I8xX",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth-x0-y1.jpg/600px-El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth-x0-y1.jpg"
+
+  ]
+
+  var uRl= images[Math.floor(Math.random() * 7)]
+
   var game =[
     [null, null, null],
     [null, null, null],
@@ -24,6 +37,8 @@
 
   var divID;
   var win = false;
+
+  var background = $(".board").css("background-image","url("+uRl+")")
 
   var resetButton = function(){
     var button = document.createElement("button");
@@ -212,6 +227,7 @@
           xMove();
           i++;
           xCheck();
+          $(this).toggleClass('clicked');
           // turn++;
           //console.log(i);
           //console.log(game);
@@ -220,6 +236,7 @@
           oMove();
           i++;
           oCheck();
+          $(this).toggleClass('clicked');
           // turn++;
           //console.log(i);
         }
