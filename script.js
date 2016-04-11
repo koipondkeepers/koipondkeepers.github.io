@@ -242,6 +242,7 @@
         }
         if(i === 10 && win === false){
           $('body').append("<h2>It's a tie!</h2>")
+          resetButton();
         }
       }
     });
