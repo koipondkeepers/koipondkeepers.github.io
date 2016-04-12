@@ -251,7 +251,7 @@
           //console.log(i);
         }
         if(i === 10 && win === false){
-          $('body').append("<h2>It's a tie!<br></h2>")
+          $('body').append("<h2>It's a tie! Thanks for playing!<br></h2>")
           resetButton();
         }
       }
