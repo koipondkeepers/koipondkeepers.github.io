@@ -17,7 +17,7 @@
   //var turn = 1;
 
   var images =[
-    "http://www.visualnews.com/wp-content/uploads/2014/09/Rowan-Atkinson-Inserted-into-Famous-Paintings-10.jpg",
+    "https://s-media-cache-ak0.pinimg.com/736x/1d/d4/32/1dd4325dc0634c6956787a609a879c67.jpg",
     "http://blogs.wfmt.com/offmic/files/2013/07/guernica_pablo_picasso-600x600.jpg",
     "http://unitedvirtuoso.com/wp-content/uploads/2013/06/mona_lisa_face_800x800px1-600x600.jpg",
     "http://static.bootic.com/_pictures/66287/van-gogh-starry-night-painting.jpg",
@@ -28,6 +28,7 @@
   ]
 
   var uRl= images[Math.floor(Math.random() * 7)]
+
 
   var game =[
     [null, null, null],
